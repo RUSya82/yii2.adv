@@ -21,24 +21,25 @@ class HelloController extends Controller
 //            $dump = "NO";
 //        }
         //echo Yii::$app->user->validatePassword('123')
-        $user = User::findOne(['id' =>1]);
-        $user->setPassword('123');
+        //$user = User::findOne(['id' =>1]);
+        //$user->setPassword('123');
 
-        $user->save(true,['password_hash' => $user->password_hash]);
+        //$user->save(true,['password_hash' => $user->password_hash]);
 
-        $user2 = User::findOne(['id' =>2]);
-        $user2->setPassword('111');
+//        $user2 = User::findOne(['id' =>2]);
+//        $user2->setPassword('111');
         $user3 = new User([
-            'username' => 'Tree',
-            'auth_key' => '2df84er5',
-            'email' =>'slkfn@mail.ru',
+            'username' => 'First',
+            'auth_key' => '2d564er5',
+            'email' =>'dddfn@mail.ru',
             'status' => 10,
 
         ]);
-        $user3->setPassword('55512');
+        $user3->setPassword('11111');
         $user3->save();
        // $user2 = Yii::$app->getUser()
-        return $this->render('index',['data' => $user2->username]);
+        $data = "Hello";
+        return $this->render('index',['data' => $user3->username]);
     }
 
 

@@ -28,18 +28,18 @@ class HelloController extends Controller
 
 //        $user2 = User::findOne(['id' =>2]);
 //        $user2->setPassword('111');
-        $user3 = new User([
-            'username' => 'First',
-            'auth_key' => '2d564er5',
-            'email' =>'dddfn@mail.ru',
-            'status' => 10,
-
-        ]);
-        $user3->setPassword('11111');
-        $user3->save();
+//        $user3 = new User([
+//            'username' => 'First',
+//            'auth_key' => '2d564er5',
+//            'email' =>'dddfn@mail.ru',
+//            'status' => 10,
+//
+//        ]);
+//        $user3->setPassword('11111');
+//        $user3->save();
        // $user2 = Yii::$app->getUser()
         $data = "Hello";
-        return $this->render('index',['data' => $user3->username]);
+        return $this->render('index',['data' => $data]);
     }
 
 

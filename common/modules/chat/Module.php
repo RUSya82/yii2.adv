@@ -1,6 +1,6 @@
 <?php
 
-namespace common\modules;
+namespace common\modules\chat;
 
 /**
  * chat module definition class
@@ -10,7 +10,7 @@ class Module extends \yii\base\Module
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'common\modules\controllers';
+    public $controllerNamespace = 'common\modules\chat\controllers';
 
     /**
      * {@inheritdoc}

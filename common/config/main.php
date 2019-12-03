@@ -12,7 +12,7 @@ return [
     ],
     'modules' => [
         'chat' => [
-            'class' => 'common\modules\Module',
+            'class' => 'common\modules\chat\Module',
         ],
     ],
 ];

@@ -4,6 +4,8 @@
 
 $this->title = 'My Yii Application';
 ?>
+<?= \common\modules\chat\widgets\Chat::widget();?>
+
 <div class="site-index">
 
     <div class="jumbotron">

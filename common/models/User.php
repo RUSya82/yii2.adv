@@ -44,6 +44,10 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return [
             TimestampBehavior::className(),
+//            'attributes'=>[
+//                ActiveRecord::EVENT_BEFORE_INSERT => ['created_at', 'updated_at'],
+//                ActiveRecord::EVENT_BEFORE_UPDATE => ['updated_at']
+//            ]
         ];
     }
 
@@ -55,6 +59,7 @@ class User extends ActiveRecord implements IdentityInterface
         return [
             ['status', 'default', 'value' => self::STATUS_INACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
+            [['created_at', 'updated_at'],'safe'],
         ];
     }
 

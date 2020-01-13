@@ -10,7 +10,7 @@ class HelloController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index',['data' => 'Hello, World!!!']);
+        return $this->render('index',['data' => 'Hello, People!!!']);
     }
 
 
